@@ -85,37 +85,97 @@ section.conteudo{
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     width: 500px;
     padding: 20px;
-  }
+}
   
-  .header {
+.header {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .weekdays, .days {
+}
+
+.weekdays, .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
-  }
+}
   
-  .weekdays div {
+.weekdays div {
     font-weight: bold;
     padding: 10px 0;
     color: #555;
-  }
+}
   
-  .days div {
+.days div {
     padding: 20px 0;
     margin: 2px;
     border-radius: 5px;
     background-color: #e9ecef;
     transition: 0.3s;
-  }
+}
   
-  .days div:hover {
+.days div:hover {
     background-color: #007bff;
     color: white;
-  }
+}
+
+/*Conteudo trabalho*/
+
+.trabalhos-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.trabalho-card {
+    background-color: #a5a5a5;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.trabalho-card .materia {
+    font-weight: bold;
+    color: #333;
+}
+
+.trabalho-card .titulo {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.trabalho-card .descricao {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.trabalho-card .data-entrega {
+    font-size: 13px;
+    color: red;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.status.pendente {
+    background-color: #ffe08a;
+    color: #8a6d00;
+}
+
+.status.entregue {
+    background-color: #b2f5ea;
+    color: #006666;
+}
+
+.status.atrasado {
+    background-color: #fbb;
+    color: #990000;
+}
+
 
 /*Conteudo Notas*/
 

@@ -34,7 +34,6 @@
             </header>
 
             
-
         </div><!--container-->
     </section><!--Conteudo-->
 
@@ -54,8 +53,8 @@
 
                         <div class="calendar">
                             <div class="header">
-                            <h2 id="monthYear"></h2>
-                            </div>
+                                <h2 id="monthYear"></h2>
+                            </div><!--header-->
                             <div class="weekdays">
                             <div>Dom</div>
                             <div>Seg</div>
@@ -64,9 +63,9 @@
                             <div>Qui</div>
                             <div>Sex</div>
                             <div>Sáb</div>
-                            </div>
+                            </div><!--weekdays-->
                             <div class="days" id="calendarDays"></div>
-                        </div>
+                        </div><!--calendar-->
                     </div><!--container-->
                 `);
                 gerarCalendario();
@@ -81,6 +80,23 @@
                             <h2 class="titulo">Trabalhos</h2>
                             <div class="line"></div>
                         </header>
+
+                        <div class="trabalhos-board">
+                            <div class="trabalho-card">
+                                <p class="materia">História</p>
+                                <h3 class="titulo">Revolução Francesa</h3>
+                                <p class="descricao">Escreva um resumo de 15 linhas sobre a Revolução Francesa.</p>
+                                <p class="data-entrega">Entrega: 10/04/2025</p>
+                                <span class="status pendente">Pendente</span>
+                            </div><!--trabalho-card-->
+                            <div class="trabalho-card">
+                                <p class="materia">Ciências</p>
+                                <h3 class="titulo">Ciclo da Água</h3>
+                                <p class="descricao">Fazer uma maquete representando o ciclo da água.</p>
+                                <p class="data-entrega">Entrega: 15/04/2025</p>
+                                <span class="status entregue">Entregue</span>
+                            </div><!--trabalho-card-->
+                        </div><!--trabalhos-board-->
                     </div><!--container-->
                 `);
             });
@@ -220,11 +236,13 @@
 
                                 <label>Para quem:<select name="to" id="">
                                     <option value="">Pais e responsáveis</option>
+                                    <option value="">Professores</option>
                                 </select></label>
 
                                 <label>Tipo:<select name="tipo" id="">
                                     <option value="">Trabalho</option>
-                                    <option value="">Aviso de Prova</option>
+                                    <option value="">Avisos</option>
+                                    <option value="">Nota</option>
                                 </select></label>
 
                                 <label>Data:
