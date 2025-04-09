@@ -57,6 +57,8 @@
     <script>
         $(document).ready(function() {
             $('#agenda').click(function() {
+                $('.selected').removeClass('selected');
+                $(this).addClass('selected');
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
@@ -83,6 +85,8 @@
                 `);
             });
             $('#trabalhos').click(function() {
+                $('.selected').removeClass('selected');
+                $(this).addClass('selected');
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
@@ -93,6 +97,8 @@
                 `);
             });
             $('#notas').click(function() {
+                $('.selected').removeClass('selected');
+                $(this).addClass('selected');
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
@@ -125,6 +131,8 @@
                 `);
             });
             $('#avisos').click(function() {
+                $('.selected').removeClass('selected');
+                $(this).addClass('selected');
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
@@ -135,6 +143,8 @@
                 `);
             });
             $('#relatorios').click(function() {
+                $('.selected').removeClass('selected');
+                $(this).addClass('selected');
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
