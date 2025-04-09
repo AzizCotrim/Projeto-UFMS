@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Projeto UFMS</title>
+</head>
+<body>
+    <section class="barra-lateral">
+        <div class="container" id="cont1">
+            <div class="foto">
+                <!--<img src="" alt="">-->
+            </div><!--foto-->
+            <div class="nome">
+                <p>Aziz Cotrim</p>
+            </div>
+            <div class="lista">
+                <div class="opcao" id="agenda"><p>Agenda</p></div>
+                <div class="opcao" id="trabalhos"><p>Trabalhos</p></div>
+                <div class="opcao selected" id="notas"><p>Notas</p></div>
+                <div class="opcao" id="avisos"><p>Avisos</p></div>
+                <div class="opcao" id="relatorios"><p>Relatórios</p></div>
+                <div class="opcao" id="enviar"><p>Enviar</p></div>
+            </div><!--lista-->
+        </div><!--container-->
+    </section><!--barra-lateral-->
+
+    <section class="conteudo">
+        <div class="container" id="cont2">
+            <header>
+                <h2 class="titulo">Relatórios</h2>
+                <div class="line"></div>
+            </header>
+
+            <div class="quadro">
+                <div class="note">
+                    <p class="data">03/04/2025</p>
+                    <p class="materia">Matéria: Biologia</p>
+                    <p class="assunto">Assunto: Evolução</p>
+                    <textarea>Resumo da aula</textarea>
+                </div>
+
+                <div class="note">
+                    <p class="data">03/04/2025</p>
+                    <p class="materia">Matéria: Biologia</p>
+                    <p class="assunto">Assunto: Evolução</p>
+                    <textarea>Resumo da aula</textarea>
+                </div>
+
+            </div>
+
+        </div><!--container-->
+    </section><!--Conteudo-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#agenda').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Notas</h2>
+                            <div class="line"></div>
+                        </header>
+                    </div><!--container-->
+                `);
+            });
+            $('#trabalhos').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Notas</h2>
+                            <div class="line"></div>
+                        </header>
+                    </div><!--container-->
+                `);
+            });
+            $('#notas').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Notas</h2>
+                            <div class="line"></div>
+                        </header>
+                        
+                        <div class="Notas">
+                            <div class="materias">
+                                <p class="nome-materia">Biologia</p><p class="nota-materia">7,5</p>
+                            </div><!--Materias-->
+                            <div class="materias">
+                                <p class="nome-materia">Fisica</p><p class="nota-materia">9,75</p>
+                            </div><!--Materias-->
+                            <div class="materias">
+                                <p class="nome-materia">História</p><p class="nota-materia">8,25</p>
+                            </div><!--Materias-->
+                            <div class="materias">
+                                <p class="nome-materia">Matemática</p><p class="nota-materia">10,0</p>
+                            </div><!--Materias-->
+                            <div class="materias">
+                                <p class="nome-materia">Portugues</p><p class="nota-materia">5,0</p>
+                            </div><!--Materias-->
+                            <div class="materias">
+                                <p class="nome-materia">Química</p><p class="nota-materia">8,0</p>
+                            </div><!--Materias-->
+                        </div><!--Notas-->
+
+                    </div><!--container-->
+                `);
+            });
+            $('#avisos').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Notas</h2>
+                            <div class="line"></div>
+                        </header>
+                    </div><!--container-->
+                `);
+            });
+            $('#relatorios').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Relatórios</h2>
+                            <div class="line"></div>
+                        </header>
+
+                        <div class="quadro">
+                            <div class="note">
+                                <p class="data">03/04/2025</p>
+                                <p class="materia">Matéria: Biologia</p>
+                                <p class="assunto">Assunto: Evolução</p>
+                                <textarea>Resumo da aula</textarea>
+                            </div>
+
+                            <div class="note">
+                                <p class="data">03/04/2025</p>
+                                <p class="materia">Matéria: Biologia</p>
+                                <p class="assunto">Assunto: Evolução</p>
+                                <textarea>Resumo da aula</textarea>
+                            </div>
+
+                        </div>
+
+                    </div><!--container-->
+                `);
+            });
+            $('#enviar').click(function() {
+                $('.conteudo').html(`
+                    <div class="container" id="cont2">
+                        <header>
+                            <h2 class="titulo">Enviar</h2>
+                            <div class="line"></div>
+                        </header>
+                        
+                        <div class="formulario">
+                            <div class="box">
+                                <label>Para onde:<select name="" id="">
+                                    <option value="">Agenda</option>
+                                    <option value="">Trabalhos</option>
+                                    <option value="">Notas</option>
+                                    <option value="">Avisos</option>
+                                    <option value="">Relatórios</option>
+                                </select></label>
+
+                                <label>Turma:<select name="turma" id="" >
+                                    <option value="">6 Ano</option>
+                                    <option value="">7 Ano</option>
+                                    <option value="">8 Ano</option>
+                                    <option value="">9 Ano</option>
+                                    <option value="">1 EM</option>
+                                    <option value="">2 EM</option>
+                                    <option value="">3 EM</option>
+                                </select></label>
+
+                                <label>Para quem:<select name="to" id="">
+                                    <option value="">Pais e responsáveis</option>
+                                </select></label>
+
+                                <label>Tipo:<select name="tipo" id="">
+                                    <option value="">Trabalho</option>
+                                    <option value="">Aviso de Prova</option>
+                                </select></label>
+
+                                <label>Data:
+                                    <input type="date" name="" id="">
+                                </label>
+
+                                <label>Materia: <select name="materia" id="">
+                                    <option value="">Biologia</option>
+                                    <option value="">Fisica</option>
+                                    <option value="">Historia</option>
+                                    <option value="">Matemática</option>
+                                    <option value="">Portugues</option>
+                                    <option value="">Química</option>
+                                </select></label>
+
+                                <label>Conteudo:<textarea name="" id=""></textarea></label>
+
+                            </div><!--box-->
+                            <button>ENVIAR</button>
+                        </div><!--formulario-->
+
+                    </div><!--container-->
+                `);
+            });
+        });
+    </script>
+
+</body>
+</html>
