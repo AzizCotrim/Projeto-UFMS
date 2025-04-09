@@ -29,25 +29,11 @@
     <section class="conteudo">
         <div class="container" id="cont2">
             <header>
-                <h2 class="titulo">Calendario</h2>
+                <h2 class="titulo">Trabalhos</h2>
                 <div class="line"></div>
             </header>
 
-            <div class="calendar">
-                <div class="header">
-                  <h2 id="monthYear"></h2>
-                </div>
-                <div class="weekdays">
-                  <div>Dom</div>
-                  <div>Seg</div>
-                  <div>Ter</div>
-                  <div>Qua</div>
-                  <div>Qui</div>
-                  <div>Sex</div>
-                  <div>Sáb</div>
-                </div>
-                <div class="days" id="calendarDays"></div>
-              </div>
+            
 
         </div><!--container-->
     </section><!--Conteudo-->
@@ -92,7 +78,7 @@
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
                         <header>
-                            <h2 class="titulo">Notas</h2>
+                            <h2 class="titulo">Trabalhos</h2>
                             <div class="line"></div>
                         </header>
                     </div><!--container-->
@@ -138,11 +124,37 @@
                 $('.selected').removeClass('selected');
                 $(this).addClass('selected');
                 $('.conteudo').html(`
-                    <div class="container" id="cont2">
+                     <div class="container" id="cont2">
                         <header>
-                            <h2 class="titulo">Notas</h2>
+                            <h2 class="titulo">Avisos</h2>
                             <div class="line"></div>
                         </header>
+                        <div class="avisos-board">
+                            <div class="postit">
+                                <div class="postit-header">Aviso Importante</div>
+                                <div class="postit-body">Lembre-se de entregar o relatório da disciplina na próxima semana.</div>
+                            </div>
+                            <div class="postit">
+                                <div class="postit-header">Reunião</div>
+                                <div class="postit-body">Reunião marcada para as 14h00 na sala 203.</div>
+                            </div>
+                            <div class="postit">
+                                <div class="postit-header">Palestra</div>
+                                <div class="postit-body">A palestra acontecerá na sexta-feira.</div>
+                            </div>
+                            <div class="postit">
+                                <div class="postit-header">Aviso Importante</div>
+                                <div class="postit-body">Lembre-se de entregar o relatório da disciplina na próxima semana.</div>
+                            </div>
+                            <div class="postit">
+                                <div class="postit-header">Reunião</div>
+                                <div class="postit-body">Reunião marcada para as 14h00 na sala 203.</div>
+                            </div>
+                            <div class="postit">
+                                <div class="postit-header">Palestra</div>
+                                <div class="postit-body">A palestra acontecerá na sexta-feira.</div>
+                            </div>
+                        </div><!--avisos-board-->
                     </div><!--container-->
                 `);
             });

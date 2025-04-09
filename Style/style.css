@@ -14,13 +14,13 @@ body{
 }
 
 .barra-lateral{
+    position: fixed;
     height: 100vh;
     background-color: #b2b2b2;
     justify-items: center;
 }
 
 .container{
-   
     justify-items: center;
 }
 
@@ -71,13 +71,19 @@ body{
     cursor: pointer;
 }
 
+/*Sction Conteudo*/
+
+section.conteudo{
+    margin-left: 300px;
+}
+
 /*Conteudo Agenda*/
 
 .calendar {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 350px;
+    width: 500px;
     padding: 20px;
   }
   
@@ -99,7 +105,7 @@ body{
   }
   
   .days div {
-    padding: 10px 0;
+    padding: 20px 0;
     margin: 2px;
     border-radius: 5px;
     background-color: #e9ecef;
@@ -154,6 +160,42 @@ h2.titulo{
     padding: 0 30px;
 }
 
+/*Conteudo Avisos*/
+
+.avisos-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.postit {
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.postit:hover {
+    transform: translateY(-5px);
+}
+
+.postit-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b2b2b2; 
+}
+
+.postit-body {
+    font-size: 14px;
+    color: #333;
+}
+
 /*Conteudo Relatório*/
 
 .quadro{
@@ -187,7 +229,6 @@ p.materia, p.assunto{
     width: 50%;
     padding: 0 10px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 p.assunto{
@@ -199,8 +240,8 @@ p.assunto{
     resize: vertical;
     border-radius: 5px;
     padding: 10px;
-    min-height: 300px;
-    margin: 10px 10%;
+    min-height: 200px;
+    margin: 15px 10%;
 }
 
 /*Conteudo Enviar*/
