@@ -83,7 +83,9 @@
                         </div>
                     </div><!--container-->
                 `);
+                gerarCalendario();
             });
+
             $('#trabalhos').click(function() {
                 $('.selected').removeClass('selected');
                 $(this).addClass('selected');
@@ -96,6 +98,7 @@
                     </div><!--container-->
                 `);
             });
+
             $('#notas').click(function() {
                 $('.selected').removeClass('selected');
                 $(this).addClass('selected');
@@ -130,6 +133,7 @@
                     </div><!--container-->
                 `);
             });
+
             $('#avisos').click(function() {
                 $('.selected').removeClass('selected');
                 $(this).addClass('selected');
@@ -142,6 +146,7 @@
                     </div><!--container-->
                 `);
             });
+            
             $('#relatorios').click(function() {
                 $('.selected').removeClass('selected');
                 $(this).addClass('selected');
@@ -172,6 +177,7 @@
                     </div><!--container-->
                 `);
             });
+
             $('#enviar').click(function() {
                 $('.conteudo').html(`
                     <div class="container" id="cont2">
