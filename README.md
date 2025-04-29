@@ -31,5 +31,5 @@ O objetivo é facilitar a comunicação entre professores, alunos e responsávei
 - Estrutura de pastas simples:
 
 ## Alunos
-- Aziz Cotrim
+- Aziz Messias Mariano Cotrim
 - Edersom Aparecido Barros Rodrigues
