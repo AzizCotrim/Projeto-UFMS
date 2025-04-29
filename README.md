@@ -29,3 +29,7 @@ O objetivo é facilitar a comunicação entre professores, alunos e responsávei
 - **HTML5** e **CSS3** para marcação e estilização.  
 - **JavaScript** + **jQuery** para lógica de interações e geração de conteúdo dinâmico.  
 - Estrutura de pastas simples:
+
+## Alunos
+- Aziz Cotrim
+- Edersom Aparecido Barros Rodrigues
